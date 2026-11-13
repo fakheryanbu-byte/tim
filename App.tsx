@@ -24,6 +24,7 @@ import ContactBar from './components/ContactBar';
 import RestaurantMenu from './components/RestaurantMenu';
 import SaudiMedia from './components/SaudiMedia';
 import LostDamagedInventory from './components/LostDamagedInventory';
+import CheckInSection from './components/CheckInSection';
 import { policiesData } from './policiesData';
 
 import { useTranslation } from './LanguageContext';
@@ -35,7 +36,7 @@ const App: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['welcome', 'location', 'facilities', 'restaurant', 'policies', 'damages', 'safety', 'attractions', 'media'];
+      const sections = ['welcome', 'checkin', 'location', 'facilities', 'restaurant', 'policies', 'damages', 'safety', 'attractions', 'media'];
       for (const id of sections) {
         const el = document.getElementById(id);
         if (el && el.getBoundingClientRect().top < 200) {
@@ -84,6 +85,9 @@ const App: React.FC = () => {
         <div id="welcome" className="pt-2 sm:pt-4">
           <Hero />
         </div>
+
+        {/* Top Guest Check-In Section */}
+        <CheckInSection />
 
         {/* Location & National Address Section */}
         <section id="location" className="my-8 sm:my-12 animate-slide-up">

@@ -2,7 +2,8 @@
   "name": "دليل فنادق تيم",
   "description": "A luxury electronic guidebook for guests of Team Hotel in Riyadh, featuring facilities, policies, safety guidelines, and local attractions with full Arabic support.",
   "requestFramePermissions": [
-    "geolocation"
+    "geolocation",
+    "camera"
   ],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"

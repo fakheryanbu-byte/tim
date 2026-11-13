@@ -54,6 +54,7 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onNavClick }) => {
   };
 
   const navItems = [
+    { id: 'checkin', label: t('checkin_nav'), icon: '🪪' },
     { id: 'facilities', label: t('facilities'), icon: '🏢' },
     { id: 'restaurant', label: t('restaurant'), icon: '🍽️' },
     { id: 'policies', label: t('policies'), icon: '📜' },
